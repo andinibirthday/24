@@ -1082,7 +1082,7 @@ audio {
 	z-index: 99;
 	width: 80px;
 	height: 150px;
-	background-repeat: no-repeat no-repeat;
+	background-repeat: no-repeat;
 	background-size: 80px 150px;
 }
 .balloons h2 {
@@ -1301,10 +1301,16 @@ audio {
     }
 
 
+/* Responsive styles for phones */
+@media only screen and (max-width: 600px) {
+	.balloons {
+		width: 40px;
+		height: 75px;
+		background-size: 40px 75px;
+	}
 
-    /*controlling tablet width*/
-    /*@media only screen and (max-width: 720px){
-    	.container {
-    		-webkit-transform: scale(0.9);
-    	}
-    }*/
+	.balloons h2 {
+		font-size: 24px;
+		text-shadow: 2px 2px 2px #FFF;
+	}
+}
