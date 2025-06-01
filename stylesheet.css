@@ -1304,13 +1304,23 @@ audio {
 /* Responsive styles for phones */
 @media only screen and (max-width: 600px) {
 	.balloons {
-		width: 40px;
-		height: 75px;
-		background-size: 40px 75px;
+		width: 60px;
+		height: 100px;
+		background-size: 60px 100px;
 	}
 
 	.balloons h2 {
-		font-size: 24px;
+		font-size: 28px;
 		text-shadow: 2px 2px 2px #FFF;
+	}
+
+	.balloon-border {
+		/* Optional: scale down if it has a background image or specific size */
+		transform: scale(0.7);
+	}
+
+	.control-panel {
+		padding: 5px 0px;
+		font-size: 14px; /* adjust based on your content */
 	}
 }
